@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KillByfron - Work in Progress Homepage">
+    <title>KillByfron - Work in Progress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 4rem;
+            color: #ff5555;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .wip-banner {
+            background-color: #ff5555;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            animation: blink 1.5s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KillByfron</h1>
+        <p class="wip-banner">🚧 This page is a work in progress. Stay tuned for updates! 🚧</p>
+        <p>We're working hard to bring you the ultimate solution for bypassing Byfron. Check back soon for more!</p>
+    </header>
+
+    <main>
+        <p>🔧 Sections like About, Features, and Download will be added soon.</p>
+        <button class="cta-button" onclick="alert('Content coming soon!')">Get Notified</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 KillByfron Project. All rights reserved. 🚀</p>
+    </footer>
+</body>
+</html>
