@@ -1,0 +1,32 @@
+﻿<Window x:Class="KillByfron.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KillByfron"
+        mc:Ignorable="d"
+        WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+        Title="KillByfron" Background="#151b58" Height="450" Width="800">
+    <Grid>
+        <Border Background="#050829" BorderThickness="0,1,0,0" BorderBrush="#202020" Height="35" VerticalAlignment="Top" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+            <Grid>
+                <StackPanel HorizontalAlignment="Left" Orientation="Horizontal" FlowDirection="LeftToRight"></StackPanel>
+                <Label Content="KillByfron " Foreground="#FFFFFF" Margin="5,0,0,0" VerticalContentAlignment="Center"/>
+                <Image Source="logo.ico" Margin="4,5,662,2"/>
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal"></StackPanel>
+                <Button x:Name="Close"  Height="30" VerticalAlignment="Center" Content="X" Margin="780,0,0,0" Click="Close_Click"/>
+                <Button x:Name="Minimize"  Height="30" VerticalAlignment="Center" Content="-" Margin="762,0,16,0" Click="Minimize_Click"/>
+            </Grid>
+        </Border>
+        <Grid Margin="0,40,0,0">
+            <TextBox x:Name="textbox" Background="#050829" Foreground="#FFFFFF" BorderThickness="0" Margin="0,0,0,111" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" TextChanged="textbox_TextChanged"/>
+            <Button Content="Inject" Click="Button_Click" Margin="742,360,0,10" Background="#373d7e"/>
+            <Button Content="Infinite Yeild" Click="Button_Click_3" Margin="378,360,300,15" Background="#373d7e"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20">
+                <Button Content="Execute" Height="29" Width="101" Click="Button_Click_1" Background="#373d7e"/>
+            </StackPanel>
+            <Button Content="Clear" Click="Button_Click_2" Background="#373d7e" Margin="148,360,552,20" Height="29" Width="101"/>
+        </Grid>
+    </Grid>
+</Window>
+
